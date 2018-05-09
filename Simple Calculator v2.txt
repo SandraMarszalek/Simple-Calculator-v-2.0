@@ -1,0 +1,68 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+                                                                cout << "Welcome to the Simple Calculator v 2.0" << endl;
+                                                                cout << "Now you can use floating point numbers!" << endl;
+                                                                cout << "What do you want to do?" << endl;
+                                                                cout << "[1] sum"  << endl;
+                                                                cout << "[2] difference"  << endl;
+                                                                cout << "[3] product"  << endl;
+                                                                cout << "[4] quotient"  << endl;
+                                                                cout << "[5] exponentation"  << endl;
+                                                                cout << "[6] root"  << endl;
+
+                                                                int choice;
+                                                                cin >> choice;
+
+double a=0;
+double b=0;
+
+    switch (choice)
+{
+
+    case 1:
+    cout << "What are the two numbers you want to use?" << endl;
+    cin >> a;
+    cin >> b;
+    cout << "Your result is " << a+b << endl;
+    break;
+
+    case 2:
+    cout << "What are the two numbers you want to use?" << endl;
+    cin >> a;
+    cin >> b;
+    cout << "Your result is " << a-b << endl;
+    break;
+
+    case 3:
+    cout << "What are the two numbers you want to use?" << endl;
+    cin >> a;
+    cin >> b;
+    cout << "Your result is " << a*b << endl;
+    break;
+
+    case 4:
+    cout << "What are the two numbers you want to use?" << endl;
+    cin >> a;
+    cin >> b;
+    cout << "Your result is " << a/b << endl;
+    break;
+
+    case 5:
+    cout << "What is your number?" << endl;
+    cin >> a;
+    cout << "Your result is " << a*a << endl;
+    break;
+
+    case 6:
+    cout << "What is your number?" << endl;
+    cin >> a;
+    cout << "Your result is " << sqrt(a) << endl;
+    break;
+
+}
+return 0;
+}
